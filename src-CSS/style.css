@@ -3,3 +3,38 @@
 /src-CSS/style.css
 
 */
+
+* {
+    text-align: center;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+#home {
+    background-color: blue;
+    color: greenyellow;
+}
+
+#about {
+    background-color:brown;
+    color: orange;
+}
+
+#contactUs {
+    background-color:darkviolet;
+    color: black;
+}
+
+.c0 {
+    color: Maroon;
+}
+
+.pa {
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+
