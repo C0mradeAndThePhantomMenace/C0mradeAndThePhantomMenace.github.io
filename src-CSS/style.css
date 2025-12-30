@@ -19,13 +19,19 @@ nav li {
 }
 
 #about {
-    background-color:brown;
+    background-color: brown;
     color: orange;
 }
 
 #contactUs {
-    background-color:darkviolet;
+    background-color: darkviolet;
     color: black;
+}
+
+#e404 {
+    color: black;
+    background-color: red;
+    font-weight: bold;
 }
 
 .c0 {
@@ -37,4 +43,3 @@ nav li {
     font-size: larger;
     font-weight: bold;
 }
-
