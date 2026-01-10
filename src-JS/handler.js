@@ -8,6 +8,7 @@ console.log("JavaScript: /src-JS/handler.js: Hi!")
 
 let page = (window.location.pathname).split("/").pop() || "home.html"
 if (page == "index.html") page = "home.html"
+if (page !== "home.html" && page !== "about.html" && page !== "contactUs.html" && page !== "test.html") page = "404.html"
 page = page.charAt(0).toUpperCase() + page.slice(1);
 // let page = (window.location.pathname).split("/").pop() || "index.html"
 console.log(`HTML Page: ${page}`)
