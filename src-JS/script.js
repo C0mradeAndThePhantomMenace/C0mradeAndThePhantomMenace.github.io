@@ -14,16 +14,21 @@ let headerParts = {
     "navID": "/src-HTML/nav.html",
 }
 
-let pagePartMain = {
-    "index.html": ["mainHomeID", "/src-HTML/mainHome.html"],
-    "about.html": ["mainAboutID", "/src-HTML/mainAbout.html"],
-    "contactUs.html": ["mainContactUsID", "/src-HTML/mainContactUs.html"]
-}
+// let pagePartMain = {
+//     "index.html": ["mainHomeID", "/src-HTML/mainHome.html"],
+//     "about.html": ["mainAboutID", "/src-HTML/mainAbout.html"],
+//     "contactUs.html": ["mainContactUsID", "/src-HTML/mainContactUs.html"]
+// }
 
 
 for (const key in headerParts) {
     console.log(key, headerParts[key])
     htmlHandler(key, headerParts[key])
+}
+
+for (const key in homePagePart) {
+    console.log("***", key, homePagePart[key])
+    htmlHandler(key, homePagePart[key])
 }
 
 // htmlHandler(pagePartMain[page][0], pagePartMain[page][1])

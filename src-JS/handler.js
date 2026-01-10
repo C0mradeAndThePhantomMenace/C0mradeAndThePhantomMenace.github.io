@@ -13,7 +13,10 @@ page = page.charAt(0).toUpperCase() + page.slice(1);
 // let page = (window.location.pathname).split("/").pop() || "index.html"
 console.log(`HTML Page: ${page}`)
 
-
+let homePagePart = {
+    "mainID": "/src-HTML/main2" + page,
+    "subTitleID": "/src-HTML/subTitle2" + page,
+}
 
 const htmlInject = (htmlID, htmlCode) => document.getElementById(htmlID).innerHTML = htmlCode;
 

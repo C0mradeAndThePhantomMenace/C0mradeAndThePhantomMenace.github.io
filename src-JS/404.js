@@ -1,10 +1,10 @@
 /**
  * 
-test.js
-\src-JS\test.js
+404.js
+\src-JS\404.js
  */
 
-console.log("\src-JS\test.js: Hi!")
+console.log("\src-JS\\404.js: Hi!")
 
 // let homePagePart = {
 //     "mainID": "/src-HTML/main2" + page,
