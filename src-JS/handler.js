@@ -13,7 +13,12 @@ page = page.charAt(0).toUpperCase() + page.slice(1);
 // let page = (window.location.pathname).split("/").pop() || "index.html"
 console.log(`HTML Page: ${page}`)
 
-let homePagePart = {
+let pagePartHeader = {
+    "titleID": "/src-HTML/title.html",
+    "navID": "/src-HTML/nav.html",
+}
+
+let pagePartMain = {
     "mainID": "/src-HTML/main2" + page,
     "subTitleID": "/src-HTML/subTitle2" + page,
 }
