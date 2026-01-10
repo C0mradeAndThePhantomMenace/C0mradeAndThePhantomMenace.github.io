@@ -7,8 +7,8 @@ test.js
 console.log("\src-JS\test.js: Hi!")
 
 let homePagePart = {
-    "mainTestID": "/src-HTML/mainTest.html",
-    "subTitleC0ID": "/src-HTML/subTitle2T.html",
+    "mainID": "/src-HTML/main2" + page,
+    "subTitleID": "/src-HTML/subTitle2" + page,
 }
 
 

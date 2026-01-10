@@ -7,12 +7,12 @@ home.js
 console.log("\src-JS\home.js: Hi!")
 
 let homePagePart = {
-    "mainHomeID": "/src-HTML/mainHome.html",
-    "subTitleC0ID": "/src-HTML/subTitle2H.html",
+    "mainID": "/src-HTML/main2" + page,
+    "subTitleID": "/src-HTML/subTitle2" + page,
 }
 
 for (const key in homePagePart) {
-    console.log(key, homePagePart[key])
+    console.log("***", key, homePagePart[key])
     htmlHandler(key, homePagePart[key])
 }
 

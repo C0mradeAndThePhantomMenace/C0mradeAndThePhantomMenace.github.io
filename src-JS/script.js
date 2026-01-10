@@ -9,9 +9,9 @@ console.log("JavaScript: /src-JS/script.js: Hi!")
 // let page = (window.location.pathname).split("/").pop() || "index.html"
 // console.log(`HTML Page: ${page}`)
 
-let pagePart = {
-    "titleC0ID": "/src-HTML/header.html",
-    "navC0ID": "/src-HTML/nav.html",
+let headerParts = {
+    "titleID": "/src-HTML/title.html",
+    "navID": "/src-HTML/nav.html",
 }
 
 let pagePartMain = {
@@ -21,24 +21,9 @@ let pagePartMain = {
 }
 
 
-const htmlInject = (htmlID, htmlCode) => document.getElementById(htmlID).innerHTML = htmlCode;
-
-const htmlLoader = (htmlFileSrc) => fetch(htmlFileSrc)
-    .then(response => {
-        if (response.ok) return response.text(); // Get the response as plain text
-        else throw new Error('Network response was not ok ' + response.statusText);
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
-
-const htmlHandler = (htmlID, htmlFileSrc) => htmlLoader(htmlFileSrc)
-    .then(htmlCode => htmlInject(htmlID, htmlCode))
-    .catch(error => console.error('There was a problem:', error))
-
-for (const key in pagePart) {
-    console.log(key, pagePart[key])
-    htmlHandler(key, pagePart[key])
+for (const key in headerParts) {
+    console.log(key, headerParts[key])
+    htmlHandler(key, headerParts[key])
 }
 
 // htmlHandler(pagePartMain[page][0], pagePartMain[page][1])

@@ -7,8 +7,8 @@ contactUs.js
 console.log("\src-JS\contactUs.js: Hi!")
 
 let homePagePart = {
-    "mainContactUsID": "/src-HTML/mainContactUs.html",
-    "subTitleC0ID": "/src-HTML/subTitle2C.html",
+    "mainID": "/src-HTML/main2" + page,
+    "subTitleID": "/src-HTML/subTitle2" + page,
 }
 
 

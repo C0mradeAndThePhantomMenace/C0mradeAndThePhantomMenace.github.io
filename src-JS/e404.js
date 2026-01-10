@@ -7,8 +7,8 @@
 console.log("\src-JS\e404.js: Hi!")
 
 let homePagePart = {
-    "main404ID": "/src-HTML/mainE404.html",
-    "subTitleC0ID": "/src-HTML/subTitle2E404.html",
+    "mainID": "/src-HTML/main2" + page,
+    "subTitleID": "/src-HTML/subTitle2" + page,
 }
 
 
