@@ -6,23 +6,6 @@ handler.js
 
 console.log("JavaScript: /src-JS/handler.js: Hi!")
 
-let page = (window.location.pathname).split("/").pop() || "home.html"
-if (page == "index.html") page = "home.html"
-if (page !== "home.html" && page !== "about.html" && page !== "contactUs.html" && page !== "test.html") page = "404.html"
-page = page.charAt(0).toUpperCase() + page.slice(1);
-// let page = (window.location.pathname).split("/").pop() || "index.html"
-console.log(`HTML Page: ${page}`)
-
-let pagePartHeader = {
-    "titleID": "/src-HTML/title.html",
-    "navID": "/src-HTML/nav.html",
-}
-
-let pagePartMain = {
-    "mainID": "/src-HTML/main2" + page,
-    "subTitleID": "/src-HTML/subTitle2" + page,
-}
-
 const htmlInject = (htmlID, htmlCode) => document.getElementById(htmlID).innerHTML = htmlCode;
 
 const htmlLoader = (htmlFileSrc) => fetch(htmlFileSrc)
@@ -37,3 +20,27 @@ const htmlLoader = (htmlFileSrc) => fetch(htmlFileSrc)
 const htmlHandler = (htmlID, htmlFileSrc) => htmlLoader(htmlFileSrc)
     .then(htmlCode => htmlInject(htmlID, htmlCode))
     .catch(error => console.error('There was a problem:', error))
+
+const currentPageHandler = () => {
+    let currentPage = (window.location.pathname).split("/").pop() || "home.html"
+    // let page = (window.location.pathname).split("/").pop() || "index.html"
+    if (currentPage == "index.html") currentPage = "home.html"
+    if (currentPage !== "home.html" && currentPage !== "about.html" && currentPage !== "contactUs.html" && currentPage !== "test.html") currentPage = "404.html"
+    currentPage = currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
+    console.log(`HTML currentPage: ${currentPage}`)
+    return currentPage
+}
+
+const pagePartHeaderHandler = () => {
+    for (const key in pagePartHeader) {
+        console.log(key, pagePartHeader[key])
+        htmlHandler(key, pagePartHeader[key])
+    }
+}
+
+const pagePartMainHandler = () => {
+    for (const key in pagePartMain) {
+        console.log("***", key, pagePartMain[key])
+        htmlHandler(key, pagePartMain[key])
+    }
+}
