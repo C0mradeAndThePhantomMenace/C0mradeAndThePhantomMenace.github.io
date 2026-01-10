@@ -6,12 +6,12 @@ script.js
 
 console.log("JavaScript: /src-JS/script.js: Hi!")
 
-let page = (window.location.pathname).split("/").pop() || "index.html"
-console.log(`HTML Page: ${page}`)
+// let page = (window.location.pathname).split("/").pop() || "index.html"
+// console.log(`HTML Page: ${page}`)
 
 let pagePart = {
-    "headerID": "/src-HTML/header.html",
-    "navID": "/src-HTML/nav.html",
+    "titleC0ID": "/src-HTML/header.html",
+    "navC0ID": "/src-HTML/nav.html",
 }
 
 let pagePartMain = {

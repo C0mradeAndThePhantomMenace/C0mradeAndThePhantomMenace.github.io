@@ -8,7 +8,7 @@ console.log("\src-JS\e404.js: Hi!")
 
 let homePagePart = {
     "main404ID": "/src-HTML/mainE404.html",
-    "headerID2": "/src-HTML/header2E404.html",
+    "subTitleC0ID": "/src-HTML/subTitle2E404.html",
 }
 
 

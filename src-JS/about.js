@@ -8,7 +8,7 @@ console.log("\src-JS\about.js: Hi!")
 
 let homePagePart = {
     "mainAboutID": "/src-HTML/mainAbout.html",
-    "headerID2": "/src-HTML/header2A.html",
+    "subTitleC0ID": "/src-HTML/subTitle2A.html",
 }
 
 

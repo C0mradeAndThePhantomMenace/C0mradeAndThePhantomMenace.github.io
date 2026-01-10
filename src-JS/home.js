@@ -8,7 +8,7 @@ console.log("\src-JS\home.js: Hi!")
 
 let homePagePart = {
     "mainHomeID": "/src-HTML/mainHome.html",
-    "headerID2": "/src-HTML/header2H.html",
+    "subTitleC0ID": "/src-HTML/subTitle2H.html",
 }
 
 for (const key in homePagePart) {

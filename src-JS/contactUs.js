@@ -1,6 +1,6 @@
 /**
  * 
-about.js
+contactUs.js
 \src-JS\contactUs.js
  */
 
@@ -8,7 +8,7 @@ console.log("\src-JS\contactUs.js: Hi!")
 
 let homePagePart = {
     "mainContactUsID": "/src-HTML/mainContactUs.html",
-    "headerID2": "/src-HTML/header2C.html",
+    "subTitleC0ID": "/src-HTML/subTitle2C.html",
 }
 
 
